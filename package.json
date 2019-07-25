@@ -1,7 +1,7 @@
 {
   "name": "mongodb-practice",
   "version": "1.0.0",
-  "description": "",
+  "description": "We are trying to write a nodejs program that will allow our code running on our computer to communicate with a database that is on another computer. Communicate means to send data to the database to save and retrieve data to look at. There is no built in way to talk to a database in nodejs or javascript. We have to use a tool (npm package) that will do the talking for us. The most basic tool we can use is the mongodb client. This is nothing more than a npm package that we can install and use. \r ## Setup\r * fork, clone, npm install\r ## Connecting\r * Before computers can talk to each other they must know where they are. Before you can call someone, you must know their phone number.\r * Make sure you have the connection string for your database. \r * A connection string is the phone number of a database.\r * Assign your database connection string to the url variable.\r * Run the code and make sure you can at least connect to your database.\r * Connecting is an asynchronous operation so there needs to be a callback function to run when connecting is done.\r * You cannot start talking to someone on the phone as soon as you dial. You have to wait until it rings and they pick up.\r * Once connected, specify which database you want the client to talk to. Replace `client.db(\"???\")` with your database name.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "mongodb": "^3.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Honestjoewillie/mongodb-practice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Honestjoewillie/mongodb-practice/issues"
+  },
+  "homepage": "https://github.com/Honestjoewillie/mongodb-practice#readme"
 }
