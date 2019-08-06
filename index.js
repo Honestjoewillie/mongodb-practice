@@ -1,9 +1,12 @@
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 let products = require('./products');
+let contacts = require('./contacts');
+let vehicles = require('./vehicles');
+let comments = require('./comments');
 
 // change this to your mongodb atlas uri
-const url = "mongodb+srv://Joe_Cluster:cluster@cluster0-2avxp.mongodb.net/test?retryWrites=true&w=majority";
+const url = "mongodb+srv://Joe_Cluster:cluster@cluster0-2avxp.mongodb.net/aca-store";
 
 // Create a new MongoClient
 const client = new MongoClient(url);
@@ -40,9 +43,9 @@ const findSomething = function(db,callback) {
   }
 const insertSomething = function(db,callback) {
     // Get the documents collection
-    const collection = db.collection('products');
+    const collection = db.collection('comments');
     // Insert some documents
-    collection.insertMany(products, function(err, result) {
+    collection.insertMany(comments, function(err, result) {
       console.log("Inserted documents into the collection");
       callback();
     });
