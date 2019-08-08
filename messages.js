@@ -1,4 +1,4 @@
-messages: [{
+module.exports = [{
     id: 1,
     name: "Lotti Huikerby",
     date: "2/6/2017",

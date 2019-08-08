@@ -1,4 +1,4 @@
-orders: [{
+module.exports = [{
     id: 1,
     orderDate: "9/19/2016",
     orderTime: "6:44 AM",

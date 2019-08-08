@@ -1,4 +1,4 @@
-tasks: [{
+module.exports = [{
     id: 1,
     task: "VDI",
     date: "11/4/2016"
