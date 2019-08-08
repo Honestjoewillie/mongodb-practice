@@ -4,6 +4,9 @@ let products = require('./products');
 let contacts = require('./contacts');
 let vehicles = require('./vehicles');
 let comments = require('./comments');
+let tasks = require('./tasks');
+let messages = require('./messages');
+let orders = require('./orders');
 
 // change this to your mongodb atlas uri
 const url = "mongodb+srv://Joe_Cluster:cluster@cluster0-2avxp.mongodb.net/aca-store";
